@@ -11,7 +11,7 @@ Code used for the analysis of the scRNA-seq data for the article "Smooth muscle 
 ### Usage<a name="VAEusage"></a>
 The following command line
 ```
-python3 /path/to/variationalAutoEncoder.py --act_fnc relu --batch 256 --cuda_device 0 --early_stop 50 --epochs 5000 --ll_samples 100 --min_epoch 250 --name "name" --nn_dims 32 32 32 --output_dir "output_dir" --post_layer zinb --reg mmd --test_fraction 0.2 --warm_up 0.01 --n_reps 100 --hp_samples 100 --hp_layers 2 4 --hp_dims 512 256 128 64 32 --hp_lr -4.5 -3 --hp_dropout 0.6 0.9 --hp_latent 2 24 --code_folder "code_folder" --data_input "data_input"
+python3 /path/to/variationalAutoEncoder.py --act_fnc relu --batch 256 --cuda_device 0 --early_stop 50 --epochs 5000 --ll_samples 100 --min_epoch 250 --name "name" --nn_dims 32 32 32 --output_dir "output_dir" --post_layer zinb --reg mmd --test_fraction 0.2 --warm_up 0.01 --n_reps 100 --hp_samples 100 --hp_layers 3 4 --hp_dims 256 128 64 32 --hp_lr -4.5 -3 --hp_dropout 0.6 0.9 --hp_latent 10 24 --code_folder "code_folder" --data_input "data_input"
 ```
 will run the entire pipeline, where
 
